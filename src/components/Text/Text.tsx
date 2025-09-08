@@ -1,7 +1,7 @@
 import style from "./Text.module.css";
 
 interface TextProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   textAlign?: string;
   marginBottom?: string;
 }
