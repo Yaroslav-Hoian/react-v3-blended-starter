@@ -9,6 +9,7 @@ import PhotosGallery from "../PhotosGallery/PhotosGallery";
 import Loader from "../Loader/Loader";
 import Text from "../Text/Text";
 import Modal from "../Modal/Modal";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 export default function App() {
   const [photoWord, setPhotoWord] = useState<string>("");
@@ -62,7 +63,9 @@ export default function App() {
           {isSuccessSearch ? (
             <PhotosGallery photos={photos} onClickPhoto={openModal} />
           ) : (
-            <Text />
+            <Text>
+              <ErrorMessage />
+            </Text>
           )}
           {photoSelected && (
             <Modal photo={photoSelected} onClose={closeModal} />
