@@ -40,7 +40,6 @@ export default function EditPostForm({ post, onClose }: EditPostFormProps) {
   const handleSubmit = (post: NewDataPostProps, actions: FormikHelpers<NewDataPostProps>) => {
     handleEditPost(post);
     actions.resetForm();
-
     onClose();
   };
   return (
