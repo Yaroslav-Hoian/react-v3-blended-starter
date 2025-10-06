@@ -39,7 +39,7 @@ label {
 }
 
 .textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .error {
